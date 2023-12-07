@@ -1,5 +1,5 @@
 # Used for prod build.
-FROM php:8.1-fpm as php
+FROM 836449767160.dkr.ecr.ap-southeast-1.amazonaws.com/prod-laravel-api-base-image:latest as php
 
 # Set environment variables
 ENV PHP_OPCACHE_ENABLE=1
@@ -37,5 +37,5 @@ RUN mkdir -p ./storage/framework/bootstrap/cache
 RUN usermod --uid 1000 www-data
 RUN groupmod --gid 1000  www-data
 
-# Run the entrypoint file.
+# Run the entrypoint file.0
 ENTRYPOINT [ "docker/entrypoint.sh" ]
