@@ -1,5 +1,5 @@
 # Used for prod build.
-FROM php:8.1-fpm as php
+FROM 836449767160.dkr.ecr.ap-southeast-1.amazonaws.com/prod-laravel-api-base-image:latest as php
 
 # Set environment variables
 ENV PHP_OPCACHE_ENABLE=1
